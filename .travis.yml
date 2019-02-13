@@ -21,3 +21,7 @@ install:
 
 script:
   - npm run test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
+  - npm run test:cover -- --watch=false --progress=false --browsers=ChromeHeadlessCI
+
+after_success:
+  - npm run coveralls
