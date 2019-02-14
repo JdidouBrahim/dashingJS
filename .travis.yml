@@ -34,3 +34,5 @@ after_success:
     keep-history: true
     on:
       branch: master
+      branch: feat/gh-github-travis
+
