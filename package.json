@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test:cover":"rm -rf ./coverage && ng test  --no-watch --code-coverage",
-    "coveralls":"cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "build:gh-pages:demo1":"ng build -c demo1 --outputPath gh-pages/demo1 --baseHref /dashingJS/demo1/"
-   },
+    "test:cover": "rm -rf ./coverage && ng test  --no-watch --code-coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "build:gh-pages:demo1": "ng build -c demo1 --outputPath gh-pages/demo1 --baseHref /dashingJS/demo1/"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "bourbon": "^5.1.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"

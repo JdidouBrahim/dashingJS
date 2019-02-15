@@ -1,5 +1,12 @@
 @import "../../src/sass/variables";
+@import "../../node_modules/bourbon/core/bourbon/";
 
 h1 {
-    color: $h1-color;
+    color: $test-default-color;
+    @include border-style(dashed null solid);
+    @include ellipsis;
+}
+
+h2 {
+    @include ellipsis;
 }

@@ -1,8 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
 @import "variables";
-
+@import "../../node_modules/bourbon/core/bourbon/";
 
 body, html {
-    background-color: $bg-color;
+    background-color: $bg-color; 
+    font-family: $font-stack-verdana;
+    color: $test-default-color;
 }
 
