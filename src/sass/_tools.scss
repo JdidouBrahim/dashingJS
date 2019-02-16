@@ -1,4 +1,5 @@
 @charset "utf-8";
+<<<<<<< HEAD
 @import "variables";
 @import "../../node_modules/bourbon/core/bourbon/";
 @import "bootstrap-tools"; 
@@ -6,3 +7,8 @@
 
 
 
+=======
+@import 'variables';
+@import '../../node_modules/bourbon/core/bourbon/';
+@import '_bootstrap-custom.scss';
+>>>>>>> 36d8c32... feat/code-formatters - Add Prettier and husky & configure precomit commands
