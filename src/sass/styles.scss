@@ -1,14 +1,15 @@
 @charset "utf-8";
-@import "variables";
-@import "../../node_modules/bourbon/core/bourbon/";
-@import "bootstrap-custom"; 
-@import "fonts/font";
-@import "font-awesome-custome";
+@import 'variables';
+@import '../../node_modules/bourbon/core/bourbon/';
+@import 'bootstrap-custom';
+@import 'fonts/font';
+@import 'font-awesome-custome';
 
-body, html {
-    width: 100vw;
-    height: 100vh;
-    background-color: $bg-color; 
-    font-family: Poppins;
-    color: $test-default-color;
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color;
+  font-family: Poppins;
+  color: $test-default-color;
 }

@@ -7,15 +7,8 @@ import { DashbordModule } from './dashbord/dashbord.module';
 import { AppRoutesModule } from './app.routes';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageNotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    DashbordModule,
-    AppRoutesModule
-  ],
+  declarations: [AppComponent, PageNotFoundComponent],
+  imports: [BrowserModule, DashbordModule, AppRoutesModule],
   providers: [],
   bootstrap: [AppComponent]
 })
