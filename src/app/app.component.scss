@@ -1,18 +1,6 @@
 @import '../../src/sass/tools';
 
-h1 {
-  color: $info;
-  @include border-style(dashed null solid);
-  @include ellipsis;
-}
-
-h2 {
-  color: $warning;
-  a {
-    color: $danger;
-  }
-}
-
-h2 {
-  @include ellipsis;
+:host{
+    width: 100vw;
+    height: 100vh;
 }
