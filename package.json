@@ -26,6 +26,7 @@
     "bootstrap": "^4.3.1",
     "bourbon": "^5.1.0",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
@@ -51,15 +52,14 @@
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
   },
-
   "browserslist": {
-    "demo1":[
+    "demo1": [
       "defaults"
     ],
-    "prod":[
+    "prod": [
       "last 2 chrome version"
     ],
-    "dev":[
+    "dev": [
       "last 2 chrome version"
     ]
   }

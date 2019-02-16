@@ -3,10 +3,11 @@
 @import "../../node_modules/bourbon/core/bourbon/";
 @import "bootstrap-custom"; 
 @import "fonts/font";
+@import "font-awesome-custome";
 
 body, html {
     background-color: $bg-color; 
-    font-family: $font-stack-verdana;
+    font-family: Poppins;
     color: $test-default-color;
 }
 
