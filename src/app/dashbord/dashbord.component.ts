@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DashbordGridsterConfigService } from './dashbord-gridster-config.service';
 import { GridsterConfig, GridsterItem } from 'angular-gridster2';
+import { environment } from 'src/environments/environment';
+import { DashingJsGridsterItem } from './interfaces/dashing-js-gridster-item';
 
 @Component({
   selector: 'app-dashbord',
@@ -9,26 +11,12 @@ import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 })
 export class DashbordComponent implements OnInit {
   config: GridsterConfig;
-  items: Array<GridsterItem>;
+  items: Array<DashingJsGridsterItem>;
 
   constructor(private dashbordGridsterConfigService: DashbordGridsterConfigService) {}
 
   ngOnInit() {
     this.config = this.dashbordGridsterConfigService.getConfig();
-    this.items = [
-      { x: 1, y: 1, cols: 1, rows: 2 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 2, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 },
-      { x: 1, y: 1, cols: 1, rows: 1 }
-    ];
+    this.items = environment.dashingJSConfig.items;
   }
 }
